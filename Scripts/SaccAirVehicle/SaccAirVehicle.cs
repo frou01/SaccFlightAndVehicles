@@ -1585,7 +1585,7 @@ namespace SaccFlightAndVehicles
                                 }
                                 else
                                 {
-                                    PitchingRot = Quaternion.Euler(Mathf.Max(0, -Pitching.x) * Mathf.Rad2Deg, 0, 0);
+                                    PitchingRot = Quaternion.Euler(Mathf.Max(0, -Pitching.x) * Mathf.Rad2Deg * 9.81f, 0, 0);
                                 }
                                 for (int wheelIndex = 0; wheelIndex < VehicleWheelColliders.Length; wheelIndex++)
                                 {
